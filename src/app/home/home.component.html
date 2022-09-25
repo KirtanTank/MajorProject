@@ -3,112 +3,117 @@
         <title>Website UI</title>
     </head>
     <body>
-        <!-- Home Page -->
-        <div class="banner" id="home">
-            <div class="navbar">
-                <img src="assets/finallogo.png" class="logo" (click)="toHome()"/>
-                <ul>
-                    <li (click)="toHome()">Home</li>
-                    <li (click)="toAbout()">About Us</li>
-                    <li (click)="toContact()">Contact Us</li>
-                </ul>
-            </div>
-            <div class="content">
-                <h1>LOG IN HERE</h1>
-                <br><br><br><br>
-                <div>
-                    <button type="button" class="homebtn" onclick="login_fun()"><span></span>Login</button>
+        <div class="god">
+
+            <!-- Home Page -->
+            <div class="banner" id="home">
+                <div class="navbar">
+                    <img src="assets/finallogo.png" class="logo" (click)="toHome()"/>
+                    <ul>
+                        <li (click)="toHome()">Home</li>
+                        <li (click)="toAbout()">About Us</li>
+                        <li (click)="toContact()">Contact Us</li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-
-        <!-- AboutUs Page -->
-        <div class="main_con">
-            <div class="about" id="aboutus" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
-
-                <h2 style="text-align:center; color: rgb(91, 90, 88); margin-top: 30px; font-family:fantasy; font-size: 30px;">Our Team</h2>
-
-                <div class="row" data-aos="fade-down" data-aos-duration="500" >
-
-                    <div class="column" data-aos="fade-right"  data-aos-duration="500">
-                        <div class="card">
-                            <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
-                                <img src="assets/team.jpg" alt="Nikhil" class="myImg">
-                            </div>
-                            <div class="container">
-                                <h2>Nikhil Vaya</h2><br>
-                                <p class="member">Team Member</p><br><br>
-                                <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
-                                <p>nikhil@hotmail.com</p><br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column" data-aos="fade-right"  data-aos-duration="500">
-                        <div class="card">
-                            <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
-                                <img src="assets/team.jpg" alt="Harsh" class="myImg">
-                            </div>
-                            <div class="container">
-                                <h2>Harsh Majithiya</h2><br>
-                                <p class="member">Team Member</p><br><br>
-                                <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
-                                <p>nikhil@hotmail.com</p><br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="column" data-aos="fade-right"  data-aos-duration="500">
-                        <div class="card">
-                            <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
-                                <img src="assets/team.jpg" alt="Dhyey" class="myImg">
-                            </div>
-                            <div class="container">
-                                <h2>Dhyey Badheka</h2><br>
-                                <p class="member">Team Member</p><br><br>
-                                <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
-                                <p>nikhil@hotmail.com</p><br>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column" data-aos="fade-right" data-aos-duration="500">
-                        <div class="card">
-                            <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
-                                <img src="assets/team.jpg" alt="Kirtan" class="myImg">
-                            </div>
-                            <div class="container">
-                                <h2>Kirtan Tank</h2><br>
-                                <p class="member">Team Member</p><br><br>
-                                <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
-                                <p>nikhil@hotmail.com</p><br>
-                            </div>
-                        </div>
-                    </div>
-                </div> 
-            </div>
-        </div>
-
-        <!-- ContactUS Page -->
-        <div class="contact" id="contact">
-            <div class="main">
-                <div class="one">
-                    <div class="input" >
-                        <input type="text" name="name" placeholder="Name" class="input-field" [(ngModel)]="name"><br><br>
-                        <input type="email" name="email" placeholder="Email" class="input-field" [(ngModel)]="email"><br><br>
-                        <textarea name="message" class="input-field-message" placeholder="Message" [(ngModel)]="message"></textarea>
-                        <input type="submit" name="submit" class="submit">
+                <div class="content">
+                    <h1>LOG IN HERE</h1>
+                    <br><br><br><br>
+                    <div>
+                        <button type="button" class="homebtn" onclick="login_fun()"><span></span>Login</button>
                     </div>
                 </div>
             </div>
-            <div class="title">
-                <p>Contact Us</p>
+
+            <!-- AboutUs Page -->
+            <div class="main_con">
+                <div class="about" id="aboutus" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
+
+                    <h2 style="text-align:center; color: rgb(91, 90, 88); margin-top: 30px; font-family:fantasy; font-size: 30px;">Our Team</h2>
+
+                    <div class="row" data-aos="fade-down" data-aos-duration="500" >
+
+                        <div class="column" data-aos="fade-right"  data-aos-duration="500">
+                            <div class="card">
+                                <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
+                                    <img src="assets/team.jpg" alt="Nikhil" class="myImg">
+                                </div>
+                                <div class="container">
+                                    <h2>Nikhil Vaya</h2><br>
+                                    <p class="member">Team Member</p><br><br>
+                                    <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
+                                    <p>nikhil@hotmail.com</p><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column" data-aos="fade-right"  data-aos-duration="500">
+                            <div class="card">
+                                <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
+                                    <img src="assets/team.jpg" alt="Harsh" class="myImg">
+                                </div>
+                                <div class="container">
+                                    <h2>Harsh Majithiya</h2><br>
+                                    <p class="member">Team Member</p><br><br>
+                                    <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
+                                    <p>nikhil@hotmail.com</p><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column" data-aos="fade-right"  data-aos-duration="500">
+                            <div class="card">
+                                <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
+                                    <img src="assets/team.jpg" alt="Dhyey" class="myImg">
+                                </div>
+                                <div class="container">
+                                    <h2>Dhyey Badheka</h2><br>
+                                    <p class="member">Team Member</p><br><br>
+                                    <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
+                                    <p>nikhil@hotmail.com</p><br>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="column" data-aos="fade-right" data-aos-duration="500">
+                            <div class="card">
+                                <div class="teamImg" data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">
+                                    <img src="assets/team.jpg" alt="Kirtan" class="myImg">
+                                </div>
+                                <div class="container">
+                                    <h2>Kirtan Tank</h2><br>
+                                    <p class="member">Team Member</p><br><br>
+                                    <p>"A group becomes a team when each member is sure enough of himself and his contribution to praise the skills of others."</p><br>
+                                    <p>nikhil@hotmail.com</p><br>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
-            <div class="info">
-                <p>For any kind of queries reach to us by filling the form on the right.<br><br><br>(Please check Spam folders for our response.)
-                </p>
+
+            <!-- ContactUS Page -->
+            <div class="contact" id="contact">
+                <div class="main">
+                    <div class="one">
+                        <div class="input" >
+                            <input type="text" name="name" placeholder="Name" class="input-field" [(ngModel)]="name"><br><br>
+                            <input type="email" name="email" placeholder="Email" class="input-field" [(ngModel)]="email"><br><br>
+                            <textarea name="message" class="input-field-message" placeholder="Message" [(ngModel)]="message"></textarea>
+                            <input type="submit" name="submit" class="submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <p>Contact Us</p>
+                </div>
+                <div class="info">
+                    <p>For any kind of queries reach to us by filling the form on the right.<br><br><br>(Please check Spam folders for our response.)
+                    </p>
+                </div>
+                <div class="box1"></div>    
             </div>
-            <div class="box1"></div>    
+            
         </div>
+
     </body>
 </html>
