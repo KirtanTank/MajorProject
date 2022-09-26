@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
-  // x = document.getElementById('student');
-
   student(){
     const x = document.getElementById('student') as HTMLDivElement;
     const y = document.getElementById('faculty') as HTMLDivElement;
