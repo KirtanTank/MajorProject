@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 180px;
+    height: 140px;
+    cursor: pointer;
+    padding: 10px;
+}
+.background{
+    width: 200vh;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/backupload.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.uploadbtn1{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px -20px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    color: #FFFF;
+    background: transparent;
+    cursor: pointer;
+    margin-top: -200px;
+}
+.uploadbtn2{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    color: #FFFF;
+    background: transparent;
+    cursor: pointer;
+    margin-top: -200px;
+}
+.evalbtn{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    color: #FFFF;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.doc{
+    margin-top: 120px;
+    padding-left: 400px;
+}
+.doc input:first-child{
+    margin-left: -220px;
+}
+.doc input:last-child{
+    margin-left: 250px;
+}
+
+#files1{
+    font-size: 16px;
+    border-radius: 50px;
+    background: white;
+    border: none;
+    box-shadow: 5px 5px 10px black;
+    width: 350px;
+    outline: none;
+}
+#files2{
+    font-size: 16px;
+    background: white;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 5px 5px 10px black;
+    width: 350px;
+    outline: none;
+}
+::-webkit-file-upload-button{
+    color: white;
+    background: #012c28;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px 1px #6b4559;
+    outline: none;
+}
+::-webkit-file-upload-button:hover{
+    background: #438a5e;
+}
+
+/* .custom-text{
+    margin-top: 140px;
+    padding-left: 400px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.custom-text p:first-child{
+    margin-left: -170px;
+}
+.custom-text p:last-child{
+    margin-left: 430px;
+    margin-top: -15px;
+} */
+
+.evaluatebtn{
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    transform: translateY(200%);
+    text-align: center;
+}
+.upload1{
+    width: 0%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    margin-left: 270px;
+}
+.upload2{
+    width: 0%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+    margin-left: 860px;
+}
+.modeluploadbtn{
+    width: 0%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+}
+#modelUpload{
+    margin-left: 250px;
+    margin-top: 80px;
+    border: 2px solid yellow;
+    background: transparent;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #FFFF;
+    background: transparent;
+    cursor: pointer;
+}
+.studentuploadbtn{
+    width: 0%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+}
+#studentUpload{
+    margin-left: 880px;
+    margin-top: 80px;
+    border: 2px solid yellow;
+    background: transparent;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #FFFF;
+    background: transparent;
+    cursor: pointer;
+}
+.line{
+    border-left: 1px solid #DDDD;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 60px;
+}

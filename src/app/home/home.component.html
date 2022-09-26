@@ -8,7 +8,7 @@
             <!-- Home Page -->
             <div class="banner" id="home">
                 <div class="navbar">
-                    <img src="assets/finallogo.png" class="logo" (click)="toHome()"/>
+                   <a routerLink="/"><img src="assets/finallogo.png" class="logo" (click)="toHome()"/></a> 
                     <ul>
                         <li (click)="toHome()">Home</li>
                         <li (click)="toAbout()">About Us</li>
@@ -19,7 +19,7 @@
                     <h1>LOG IN HERE</h1>
                     <br><br><br><br>
                     <div>
-                        <button type="button" class="homebtn" onclick="login_fun()"><span></span>Login</button>
+                        <button type="button" class="homebtn" routerLink="/Login"><span></span>Login</button>
                     </div>
                 </div>
             </div>

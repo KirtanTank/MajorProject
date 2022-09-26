@@ -1,1 +1,126 @@
-<p>register works!</p>
+<html>
+  <head>
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="bground">
+      <div class="hero">
+        <a routerLink="/"><img src="assets/finallogo.png" class="logo"></a>
+
+        <div class="form-box">
+          <h1>Registration</h1>
+          <div class="button-box">
+
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" (click)="student()">Student</button>
+            <button type="button" class="toggle-btn" (click)="faculty()">Faculty</button>
+          </div>
+
+          <div id="student" class="input-group">
+            <input type="text" class="input-field" id="stu_name" placeholder="Name" required>
+            <input type="email" class="input-field" id="stu_email" placeholder="Email" required>
+            <input type="password" class="input-field" id="stu_password" placeholder="Password" required>
+            <input type="tel" class="input-field" id="stu_mob" placeholder="Mobile Number" required>
+            <input type="radio" name="radiobtn" class="radio-btn">
+            <label for="radio">Male</label>
+            <input type="radio" name="radiobtn" class="radio-btn">
+            <label for="radio">Female</label>
+            <button type="button" class="submit-btn" id="addStudent">Register</button>
+          </div>
+
+          <div id="faculty" class="input-group">
+            <input type="text" class="input-field" id="fac_name" placeholder="Name" required>
+            <input type="email" class="input-field" id="fac_email" placeholder="Email" required>
+            <input type="password" class="input-field" id="fac_password" placeholder="Password" required>
+            <input type="tel" class="input-field" id="fac_mob" placeholder="Mobile Number" required>
+            <input type="radio" name="radiobtn" class="radio-btn">
+            <label for="radio" class="rdlabel">Male</label>
+            <input type="radio" name="radiobtn" class="radio-btn">
+            <label for="radio" class="rdlabel">Female</label>
+            <button type="button" class="submit-btn" id="addFaculty">Register</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+<!-- <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+      import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyD4GymOu2vS_eAtMl1_BcGKyVZGZVvEewU",
+        authDomain: "hndk-solutions.firebaseapp.com",
+        databaseURL: "https://hndk-solutions-default-rtdb.firebaseio.com",
+        projectId: "hndk-solutions",
+        storageBucket: "hndk-solutions.appspot.com",
+        messagingSenderId: "589019280099",
+        appId: "1:589019280099:web:eab83d41947ce71c5b0bd6",
+        measurementId: "G-K4WM8QZ2G9"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth(app);
+      
+      var students = document.getElementById("addStudent");
+      var faculty = document.getElementById("addFaculty");
+
+      students.addEventListener("click", (event) => {
+        event.preventDefault();
+        var email = document.getElementById("stu_email").value;
+        var password = document.getElementById("stu_password").value;
+        var name = document.getElementById("stu_name").value;
+        var mobile = document.getElementById("stu_mob").value;
+
+        createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+          const user = userCredential.user;
+
+          set(ref(database, "students/" + user.uid), {
+            name : name,
+            email : email,
+            password : password,
+            mobile : mobile  
+          })
+          window.alert("CREATED");
+          location.href="login.html";
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          window.alert(errorMessage);
+        });
+      });
+      faculty.addEventListener("click", (event) => {
+        event.preventDefault();
+        var email = document.getElementById("fac_email").value;
+        var password = document.getElementById("fac_password").value;
+        var name = document.getElementById("fac_name").value;
+        var mobile = document.getElementById("fac_mob").value;
+
+        createUserWithEmailAndPassword(auth, email, password).then((userCredential) => {
+          const user = userCredential.user;
+
+          set(ref(database, "faculties/" + user.uid), {
+            name : name,
+            email : email,
+            password : password,
+            mobile: mobile 
+          })
+          window.alert("CREATED");
+          location.href="login.html";
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          window.alert(errorMessage);
+        });
+      });
+
+    </script> -->

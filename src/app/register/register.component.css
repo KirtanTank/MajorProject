@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+
+.logo{
+    width: 180px;
+    height: 140px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.hero{
+    height: 100%;
+    width: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/bglogin2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: -6% auto;
+    background: rgb(226, 226, 226);
+    border-radius: 10px;
+    padding: 5px;
+    overflow: hidden;
+    box-shadow: 0 14px 20px rgb(0, 0, 0, 0.25), 0 10px 10px rgb(0, 0, 0, 0.22);
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    border-radius: 50px;
+    transition: .5s;
+}
+
+.input-group{
+    top: 150px;
+    text-align: center;
+    margin-left: 25px;
+    position: absolute;
+    width: 200px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 250px;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0; 
+    border-left: 0;
+    border-right: 0;
+    border-bottom:  1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    margin-left: 15px;
+}
+
+.radio-btn{
+    margin: 30px 5px;
+}
+
+label{
+    font-size: 15px;
+    bottom: 60px;
+}
+
+#student{
+    left: 50px;
+}
+
+#faculty{
+    left: 450px;
+}
+
+.logo{
+    width: 200px;
+    height: 150px;
+}
+
+h1{
+    text-align: center;
+}

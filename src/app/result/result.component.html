@@ -1,1 +1,78 @@
-<p>result works!</p>
+<html>
+    <head>
+        <title>Upload PDF</title>
+    </head>
+    <body>
+
+        <div class="background">
+
+            <div>
+                <a href="home.html"><img src="assets/finallogo.png" class="logo"></a>
+            </div>
+
+            <div class="upload1">
+                <div class="uploadbtn1">Upload Model AnswerSheet</div>
+            </div>
+
+            <div class="doc">
+                <input type="file"  name="File" id="files1" onchange="addFile()" multiple>
+                <input type="file"  id="files2" multiple>
+            </div>
+
+            <div class="modeluploadbtn">
+                <button type="submit" id="modelUpload">Upload</button>
+            </div>
+            <div class="studentuploadbtn">
+                <button type="submit" id="studentUpload">Upload</button>
+            </div>
+
+            <div class="upload2">
+                <div class="uploadbtn2">Upload Student AnswerSheet</div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="evaluatebtn">
+                <button type="button" class="evalbtn">Evaluate</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+
+        <!-- <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+            import { getStorage, ref, uploadBytesResumable } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-storage.js";        
+
+            const firebaseConfig = {
+              apiKey: "AIzaSyD4GymOu2vS_eAtMl1_BcGKyVZGZVvEewU",
+              authDomain: "hndk-solutions.firebaseapp.com",
+              databaseURL: "https://hndk-solutions-default-rtdb.firebaseio.com",
+              projectId: "hndk-solutions",
+              storageBucket: "hndk-solutions.appspot.com",
+              messagingSenderId: "589019280099",
+              appId: "1:589019280099:web:eab83d41947ce71c5b0bd6",
+              measurementId: "G-K4WM8QZ2G9"
+            };
+    
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const storage = getStorage();
+            const storageRef = ref(storage);
+            const uploadTask = uploadBytesResumable(storageRef, file);
+            var file = document.getElementById('files1').files[0];
+
+        </script>
+        <script>
+             function addFile(){
+                var file = document.getElementById('files1').files[0];
+                console.log(file);
+                storageRef.put(file).then( (res) => {
+                    console.log("Success");
+                }).catch((err) => {
+                    window.alert("Error");
+                });
+            }
+        </script> -->
