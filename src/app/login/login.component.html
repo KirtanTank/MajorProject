@@ -10,63 +10,20 @@
         <h1>Login</h1>
         <form method="post">
           <div class="txt_group">
-            <input type="email" class="txt_field" id="email" required>
+            <input type="email" class="txt_field" name="fac_email" id="email" [(ngModel)] = "fac_email" required>
             <span></span>
             <label>Email</label>
           </div>
-
           <div class="txt_group">
-            <input type="password" class="txt_field" id="password" required>
+            <input type="password" class="txt_field" name="fac_password" id="password" [(ngModel)] = "fac_password" required>
             <span></span>
             <label>Password</label>
           </div>
           <div class="pass">Forgot Password?</div>
-          <input type="submit" class="login" id="login" value="Login">
+          <input type="submit" class="login" id="login" value="Login" (click)="facultyLogin()">
           <div class="register">Don't Have an account?&nbsp;<a routerLink="/Register">Register Here</a></div>
-
         </form>
       </div>
     </div> 
   </body>
 </html>
-
-<!-- <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-      import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
-      import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
-
-      const firebaseConfig = {
-        apiKey: "AIzaSyD4GymOu2vS_eAtMl1_BcGKyVZGZVvEewU",
-        authDomain: "hndk-solutions.firebaseapp.com",
-        databaseURL: "https://hndk-solutions-default-rtdb.firebaseio.com",
-        projectId: "hndk-solutions",
-        storageBucket: "hndk-solutions.appspot.com",
-        messagingSenderId: "589019280099",
-        appId: "1:589019280099:web:eab83d41947ce71c5b0bd6",
-        measurementId: "G-K4WM8QZ2G9"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const database = getDatabase(app);
-      const auth = getAuth(app);
-      
-      var login = document.getElementById("login");
-
-      login.addEventListener("click", (event) => {
-        event.preventDefault();
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
-
-        signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
-          const user = userCredential.user;
-          location.href = "upload.html";
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          window.alert("No Such Account! Please Register First");
-        });
-      });
-      </script> -->
