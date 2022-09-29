@@ -184,13 +184,16 @@ span{
 
 .box1{
     box-sizing: border-box;
-    background-color: rgba(188, 183, 183, 0.475);
-    width: 400px;
-    height: 350px;
+    background-color: rgb(255, 255, 255);
+    width: 405px;
+    height: 355px;
     border-radius: 30px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.75);
-    margin-left: 815px;
-    margin-top: -180px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+    margin-left: 810px;
+    margin-top: -189px;
+    filter: blur(5px);
+    z-index: -1;
+
 }
 
 .info{
@@ -248,8 +251,9 @@ span{
     width: 400px;
     height: 350px;
     box-sizing: border-box;
-    box-shadow:0 35px 80px rgba(0.35, 0, 0, 0.75);
-    background-color: rgb(255, 255, 255);
+    box-shadow:0 35px 80px rgba(0, 0, 0.65, 0.75);
+    z-index: 1;
+    background-color: white;
     border-radius: 30px;
 }
 
