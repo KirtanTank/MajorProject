@@ -188,7 +188,7 @@ span{
     width: 405px;
     height: 355px;
     border-radius: 30px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.35);
+    filter: drop-shadow(8px, 8px, 4px, white);
     margin-left: 810px;
     margin-top: -189px;
     filter: blur(5px);
