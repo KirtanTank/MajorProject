@@ -2,12 +2,44 @@
     margin: 0;
     padding: 0;
 }
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .logo{
     width: 180px;
     height: 140px;
     cursor: pointer;
     padding: 10px;
 }
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
 .background{
     width: 200vh;
     height: 100vh;
@@ -28,20 +60,20 @@
     color: #FFFF;
     background: transparent;
     cursor: pointer;
-    margin-top: -200px;
+    margin-top: -150px;
 }
 .uploadbtn2{
-    width: 200px;
+    width: 205px;
     padding: 15px 0;
     text-align: center;
-    margin: 20px 10px;
+    margin: 20px -10px;
     border-radius: 25px;
     font-weight: bold;
     border: 2px solid yellow;
     color: #FFFF;
     background: transparent;
     cursor: pointer;
-    margin-top: -200px;
+    margin-top: -150px;
 }
 .evalbtn{
     width: 200px;
@@ -177,9 +209,9 @@
 }
 .line{
     border-left: 1px solid #DDDD;
-    height: 400px;
+    height: 370px;
     position: absolute;
     left: 50%;
     margin-left: -4px;
-    top: 60px;
+    top: 120px;
 }

@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 
 import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { environment } from 'src/environments/environment';
     HomeComponent,
     ResultComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
