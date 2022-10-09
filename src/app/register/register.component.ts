@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../authService/auth.service';
-import { Database, set, ref } from '@angular/fire/database';
 
 @Component({
   selector: 'app-register',
@@ -31,7 +30,7 @@ export class RegisterComponent implements OnInit {
   name : string = '';
   mobile : string = '';
 
-  constructor(private auth : AuthService, private database : Database) { }
+  constructor(private auth : AuthService) { }
 
   ngOnInit(): void {
   }
@@ -48,24 +47,24 @@ export class RegisterComponent implements OnInit {
   }
 
   facultyRegister(){
-    
-  }
-
-  addFaculty(value : any){
     if(this.email == '' || this.name == '' || this.password == '' || this.mobile == ''){
       alert('Please fill up all the information!');
       return;
     }
     this.auth.facultyRegister(this.email, this.password);
-    // set(ref(this.database, 'Faculty/' + value.name), {
-    //   name : value.name,
-    //   email : value.email,
-    //   password : value.password,
-    //   mobile : value.mobile,
-    // });
     this.email = '';
     this.password = '';
     this.name = '';
     this.mobile = '';
+
   }
+
+  // addFaculty(){
+  //   set(ref(this.database, 'Faculty/' + value.name), {
+  //     name : value.name,
+  //     email : value.email,
+  //     password : value.password,
+  //     mobile : value.mobile,
+  //   });
+  // }
 }

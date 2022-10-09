@@ -8,10 +8,13 @@ import { ResultComponent } from './result/result.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
-import {AngularFireModule} from '@angular/fire/compat';
 import { environment } from 'src/environments/environment';
 import { ProfileComponent } from './profile/profile.component';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { initializeApp, provideFirebaseApp} from '@angular/fire/app';
+import { AngularFireModule } from '@angular/fire/compat';
+import {provideStorage, getStorage} from '@angular/fire/storage';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,8 @@ import { BrowserModule } from '@angular/platform-browser';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage())
   ],
   providers: [],
   bootstrap: [AppComponent]

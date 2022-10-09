@@ -26,9 +26,10 @@
             <input type="radio" name="radiobtn" class="radio-btn">
             <label for="radio">Female</label>
             <button type="button" class="submit-btn" id="addStudent" (click)="studentRegister()">Register</button>
+            <p>Already have an Account?</p><a routerLink="/Login">Login</a>
           </form>
 
-          <form id="faculty" class="input-group" #RegistrationForm = "ngForm">
+          <form id="faculty" class="input-group">
             <input type="text" class="input-field" id="fac_name" placeholder="Name" [(ngModel)] = "name" ngModel required>
             <input type="email" class="input-field" id="fac_email" placeholder="Email" [(ngModel)] = "email" ngModel required>
             <input type="password" class="input-field" id="fac_password" [(ngModel)] = "password" placeholder="Password" ngModel required>
@@ -37,7 +38,8 @@
             <label for="radio" class="rdlabel">Male</label>
             <input type="radio" name="radiobtn" class="radio-btn">
             <label for="radio" class="rdlabel">Female</label>
-            <button type="button" class="submit-btn" id="addFaculty" (ngSubmit)="addFaculty(RegistrationForm.value)">Register</button>
+            <button type="button" class="submit-btn" id="addFaculty" (click)="facultyRegister()">Register</button>
+            <p>Already have an Account?</p><a routerLink="/Login">Login</a>
           </form>
 
         </div>
