@@ -12,7 +12,7 @@
 .banner{
     width: 200vh;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ span{
 /* Contact US */
 
 .contact{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/contactUs.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../assets/contactUs.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -215,7 +215,7 @@ span{
 
 .input-field{
     width: 300px;
-    border-top: 0; 
+    border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
@@ -230,7 +230,7 @@ span{
 
 .input-field-message{
     width: 300px;
-    border-top: 0; 
+    border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
