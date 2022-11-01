@@ -5,7 +5,7 @@
 .back{
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/assets/bglogin2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../../assets/bglogin2.jpg');
     height: 100vh;
     overflow-y: scroll;
     width: 200vh;

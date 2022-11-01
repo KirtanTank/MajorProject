@@ -19,7 +19,5 @@ export class LoginComponent implements OnInit {
   facultyLogin(){
     this.auth.facultyLogin(this.fac_email, this.fac_password);
     this.fac_email = '';
-    this.fac_password = '';
-  }
-
+    this.fac_password = '';}
 }

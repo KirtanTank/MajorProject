@@ -8,12 +8,13 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   constructor(private fireauth: AngularFireAuth, private router: Router) { }
-    
+
     // login auth
     facultyLogin(email: string, password: string){
       this.fireauth.signInWithEmailAndPassword(email, password).then(() => {
         localStorage.setItem('token', 'true');
         this.router.navigate(['/Result']);
+//         this.http.post('localhost:5000/api/Login' , {}  , {})
       }, err => {
         alert(err);
         this.router.navigate(['/Login']);
@@ -45,7 +46,7 @@ export class AuthService {
       this.fireauth.signOut().then(() => {
         localStorage.removeItem('token');
         alert('Logged Out');
-        this.router.navigate(['/']);
+        this.router.navigate(['/Login']);
       }, err => {
         alert(err);
       })

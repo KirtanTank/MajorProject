@@ -56,15 +56,5 @@ export class RegisterComponent implements OnInit {
     this.password = '';
     this.name = '';
     this.mobile = '';
-
   }
-
-  // addFaculty(){
-  //   set(ref(this.database, 'Faculty/' + value.name), {
-  //     name : value.name,
-  //     email : value.email,
-  //     password : value.password,
-  //     mobile : value.mobile,
-  //   });
-  // }
 }
