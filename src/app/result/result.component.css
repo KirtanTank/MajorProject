@@ -11,14 +11,14 @@
 .background{
     width: 200vh;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../../assets/backupload.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/assets/backupload.jpg');
     background-size: cover;
     background-position: center;
     margin-left: -10px;
     margin-top: -10px;
 }
 .uploadbtn1{
-    width: 200px;
+    width: 205px;
     padding: 15px 0;
     text-align: center;
     margin: 20px -20px;
@@ -28,10 +28,10 @@
     color: #FFFF;
     background: transparent;
     cursor: pointer;
-    margin-top: -200px;
+    margin-top: -150px;
 }
 .uploadbtn2{
-    width: 200px;
+    width: 205px;
     padding: 15px 0;
     text-align: center;
     margin: 20px 10px;
@@ -41,7 +41,7 @@
     color: #FFFF;
     background: transparent;
     cursor: pointer;
-    margin-top: -200px;
+    margin-top: -150px;
 }
 .evalbtn{
     width: 200px;
@@ -177,9 +177,42 @@
 }
 .line{
     border-left: 1px solid #DDDD;
-    height: 400px;
+    height: 370px;
     position: absolute;
     left: 50%;
     margin-left: -4px;
-    top: 60px;
+    top: 120px;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    position: relative;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
 }

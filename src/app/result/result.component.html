@@ -6,8 +6,12 @@
 
         <div class="background">
 
-            <div>
-                <a href="home.html"><img src="assets/finallogo.png" class="logo"></a>
+            <div class="navbar">
+                <a routerLink="/Result"><img src="assets/finallogo.png" class="logo"></a>
+                <ul>
+                    <li routerLink="/Profile">Profile</li>
+                    <li (click)="logout()">Logout</li>
+                </ul>            
             </div>
 
             <div class="upload1">
@@ -15,15 +19,15 @@
             </div>
 
             <div class="doc">
-                <input type="file"  name="File" id="files1" onchange="addFile()" multiple>
-                <input type="file"  id="files2" multiple>
+                <input type="file"  name="File" id="files1" (change)="uploadFiles($event)" accept="application/pdf" multiple>
+                <input type="file"  id="files2" (change)="uploadFiles($event)" accept="application/pdf" multiple>
             </div>
 
             <div class="modeluploadbtn">
-                <button type="submit" id="modelUpload">Upload</button>
+                <button type="submit" id="modelUpload" (click)="addFile()">Upload</button>
             </div>
             <div class="studentuploadbtn">
-                <button type="submit" id="studentUpload">Upload</button>
+                <button type="submit" id="studentUpload" (click)="addFile()">Upload</button>
             </div>
 
             <div class="upload2">
