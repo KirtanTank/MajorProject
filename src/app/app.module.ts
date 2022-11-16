@@ -16,6 +16,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { initializeApp, provideFirebaseApp} from '@angular/fire/app';
 import { AngularFireModule } from '@angular/fire/compat';
 import {provideStorage, getStorage} from '@angular/fire/storage';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {provideStorage, getStorage} from '@angular/fire/storage';
     ResultComponent,
     LoginComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

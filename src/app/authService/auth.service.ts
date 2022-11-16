@@ -51,4 +51,14 @@ export class AuthService {
         alert(err);
       })
     }
+
+    // Forgot Password
+    forgotPassword(email : string){
+      this.fireauth.sendPasswordResetEmail(email).then(() => {
+        alert("sent");
+        this.router.navigate(['/Forgot-Password']);
+      }).catch((err) => {
+        alert(err);
+      });
+    }
 }
